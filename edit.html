@@ -45,15 +45,9 @@
       birthday.focus();
       return ;
     }
-    else alert("게시물이 추가됩니다");
+    else alert("게시물을 수정할까요?");
   }
 
-  function confirmUpdate() {
-        var result = confirm("게시물을 수정할까요?");
-        if (result) {
-            // 실제로 삭제하는 코드
-        }
-    }
 </script>
 
 </head>
@@ -123,7 +117,7 @@
     (*표시는 필수항목입니다.)
     <div class="full-width">
       <!-- <button type="button"><class="add" onclick="addFriend()">추가</button> -->
-      <button type="button" class="수정" onclick="confirmUpdate()">수정</button>
+      <input type="button" value="수정" onclick="check()";>
       <button type="button"><class="cancel" onclick="location.href='index.html'">취소</button>
     </div>
   </form>
