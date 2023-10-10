@@ -9,16 +9,11 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="my.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <style>
-      body {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      }
 
-    </style>
 </head>
 <body>
     <main>
@@ -28,7 +23,6 @@
               <ul class="nav nav-pills pull-right">
                 <li role="presentation" class="active"><a href="#">Home</a></li>
                 <li role="presentation"><a href="add.html">Add</a></li>
-                <li role="presentation"><a href="edit.html">Edit</a></li>
               </ul>
             </nav>
             <h3 class="text-muted">친구관리 서비스 페이지</h3>
@@ -45,36 +39,46 @@
                 <tr>
                   <th>#</th>
                   <th>이름</th>
-                  <th>관계</th>
                   <th>전화번호</th>
                   <th>이메일</th>
                   <th>생년월일</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr onclick="window.location='view.html'">
                   <td>1</td>
                   <td>강하늘</td>
-                  <td>고등학교 친구</td>
                   <td>010-1234-5687</td>
-                  <td>kSky@friend.com</td>
+                  <td>kSky@naver.com</td>
                   <td>2003.10.11</td>
                 </tr>
-                <tr>
-                  <td>1</td>
-                  <td>강하늘</td>
-                  <td>고등학교 친구</td>
-                  <td>010-1234-5687</td>
-                  <td>kSky@friend.com</td>
-                  <td>2003.10.11</td>
+                <tr onclick="window.location='view.html'">
+                  <td>2</td>
+                  <td>정소민</td>
+                  <td>010-1212-5687</td>
+                  <td>jsmin@gmail.com</td>
+                  <td>2003.10.30</td>
                 </tr>
-                <tr>
-                  <td>1</td>
-                  <td>강하늘</td>
-                  <td>고등학교 친구</td>
-                  <td>010-1234-5687</td>
-                  <td>kSky@friend.com</td>
-                  <td>2003.10.11</td>
+                <tr onclick="window.location='view.html'">
+                  <td>3</td>
+                  <td>강동원</td>
+                  <td>010-5734-2375</td>
+                  <td>handsome@hanmail.net</td>
+                  <td>2003.03.11</td>
+                </tr>
+                <tr onclick="window.location='view.html'">
+                  <td>4</td>
+                  <td>이동휘</td>
+                  <td>010-1234-1234</td>
+                  <td>dongdong@naver.com</td>
+                  <td>2003.12.01</td>
+                </tr>
+                <tr onclick="window.location='view.html'">
+                  <td>5</td>
+                  <td>김깔깔</td>
+                  <td>010-6362-2389</td>
+                  <td>kidding@gmail.com</td>
+                  <td>2003.04.02</td>
                 </tr>
               </tbody>
             </table>

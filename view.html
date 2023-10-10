@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="my.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script>
+    function confirmDelete() {
+        var result = confirm("게시물을 삭제할까요?");
+        if (result) {
+            // 실제로 삭제하는 코드
+        }
+    }
+    </script>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+          <div class="header clearfix">
+            <nav>
+              <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="index.html">Home</a></li>
+                <li role="presentation"><a href="add.html">Add</a></li>
+              </ul>
+            </nav>
+            <h3 class="text-muted">친구관리 서비스 페이지</h3>
+            <hr>
+          </div>
+          <br><br><br>
+
+          <!-- //목록 리스트 -->
+          <h2 class="sub-header">친구 상세 페이지</h2>
+          <hr>
+          <div class="text-center">
+            <img src="https://user-images.githubusercontent.com/127292731/273952240-16fbffef-8a80-4aa4-ba43-72fd5f9be3e6.png" style="width: 200px;">
+            <h3><strong>강하늘</strong></h3>
+            <br><br>
+            <strong>전화번호</strong>&nbsp;&nbsp;&nbsp;&nbsp;010-1234-5687
+            <br><br>
+            <strong>이메일</strong>&nbsp;&nbsp;&nbsp;&nbsp;ksky@naver.com
+            <br><br>
+            <strong>생년월일</strong>&nbsp;&nbsp;&nbsp;&nbsp;2003년 10월 11일 
+            <br>
+            (생일 챙겨야 함)
+            <br><br>
+            <strong>관계</strong>&nbsp;&nbsp;&nbsp;&nbsp;고등학교 친구
+            <br><br>
+            <strong>메모</strong>&nbsp;&nbsp;&nbsp;&nbsp;먹는거, 단 거 좋아함. 
+            <br><br>
+        </div>
+            
+          <div class="text-center">
+            <button type="button" class="edit" onclick="location.href='edit.html'">Edit</button>
+            <button type="button" class="delete" onclick="confirmDelete()">Delete</button>
+            <button type="button" class="cancel" onclick="location.href='index.html'">뒤로가기</button>
+          </div>
+          </div>
+    </main>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
